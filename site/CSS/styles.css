@@ -44,3 +44,36 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* Team Page Styling */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.team-member {
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 20px;
+}
