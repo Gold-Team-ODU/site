@@ -1,0 +1,47 @@
+/* Reset styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: black;
+    padding: 20px;
+}
+
+/* Styling for the h1 inside header */
+header h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
