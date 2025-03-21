@@ -45,6 +45,50 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    text-align: left;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.dropdown-content li {
+    display: block;
+    margin: 0;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown > a::after {
+    content: " ▼";
+    font-size: 12px;
+}
+
 /* Team Page Styling */
 .team-container {
     display: grid;
