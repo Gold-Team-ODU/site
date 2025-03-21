@@ -5,6 +5,13 @@ body {
     text-align: center;
 }
 
+p {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px; 
+    border-radius: 10px;
+}
+
 /* Header styling */
 header {
     background-color: black;
