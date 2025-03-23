@@ -12,6 +12,22 @@ p {
     border-radius: 10px;
 }
 
+/* bullits */
+.bullets-list {
+    list-style: none; 
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+    margin-top: 0;
+  }
+
+.bullets-list li::before {
+    content: "• ";
+    font-size: 1.2em;
+  }
+  
 /* Header styling */
 header {
     background-color: black;
@@ -23,6 +39,12 @@ header h1 {
     color: white;
     margin: 0;
     text-align: center;
+}
+
+h2 {
+    color: black;
+    margin-top: 1;
+    margin-bottom: 0;
 }
 
 /* Navigation styles */
