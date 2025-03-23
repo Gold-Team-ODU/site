@@ -5,6 +5,29 @@ body {
     text-align: center;
 }
 
+p {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+/* bullits */
+.bullets-list {
+    list-style: none; 
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+    margin-top: 0;
+  }
+
+.bullets-list li::before {
+    content: "• ";
+    font-size: 1.2em;
+  }
+  
 /* Header styling */
 header {
     background-color: black;
@@ -16,6 +39,12 @@ header h1 {
     color: white;
     margin: 0;
     text-align: center;
+}
+
+h2 {
+    color: black;
+    margin-top: 1;
+    margin-bottom: 0;
 }
 
 /* Navigation styles */
@@ -43,6 +72,50 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    text-align: left;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.dropdown-content li {
+    display: block;
+    margin: 0;
+}
+
+.dropdown-content li a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown > a::after {
+    content: " ▼";
+    font-size: 12px;
 }
 
 /* Team Page Styling */
