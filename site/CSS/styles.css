@@ -1,9 +1,15 @@
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: rgb(195, 195, 255); 
+    background-color: rgb(216, 212, 235); 
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -31,7 +37,7 @@ p {
   
 /* Header styling */
 header {
-    background-color: black;
+    background-color: rgb(24, 19, 27);
     padding: 20px;
 }
 
@@ -50,7 +56,7 @@ h2 {
 
 /* Navigation styles */
 nav {
-    background-color: #333;
+    background-color: #302c35;
     padding: 10px 0;
 }
 
@@ -146,7 +152,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #302c35;
     color: white;
     padding: 1rem;
     margin-top: 20px;
@@ -154,4 +160,12 @@ footer {
 
 .yes {
 
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
 }
