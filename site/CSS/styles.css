@@ -169,3 +169,21 @@ footer {
 .footer {
     flex-shrink: 0;
 }
+
+/* Container */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    min-height: 100vh;        
+    text-align: center;
+}
+
+.doc-embed {
+    width: 80%;
+    max-width: 900px;
+    height: 700px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
