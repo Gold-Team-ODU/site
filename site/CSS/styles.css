@@ -30,6 +30,8 @@ p {
     margin-top: 0;
   }
 
+
+
 .bullets-list li::before {
     content: "• ";
     font-size: 1.2em;
@@ -39,6 +41,17 @@ p {
 header {
     background-color: rgb(24, 19, 27);
     padding: 20px;
+}
+
+/*references page*/
+.references-list {
+    list-style-type: disc;
+    padding-left: 20px;      
+    text-align: left;       
+  }
+
+  .references-list li {
+    margin-bottom: 0.75em; 
 }
 
 /* Styling for the h1 inside header */
