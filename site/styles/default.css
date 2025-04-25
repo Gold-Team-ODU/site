@@ -1,0 +1,234 @@
+/* 
+  This REALLY should be split into multiple stylesheets... 
+  but I'll leave that as an exercise for someone else! :)
+*/
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(216, 212, 235);
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* bullits */
+.bullets-list {
+  list-style: none;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+
+
+.bullets-list li::before {
+  content: "• ";
+  font-size: 1.2em;
+}
+
+/* Header styling */
+header {
+  background-color: rgb(24, 19, 27);
+  padding: 20px;
+}
+
+/*references page*/
+.references-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.references-list li {
+  margin-bottom: 0.75em;
+}
+
+/* Styling for the h1 inside header */
+header h1 {
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  margin-top: 1;
+  margin-bottom: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #302c35;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  text-align: left;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.dropdown-content li {
+  display: block;
+  margin: 0;
+}
+
+.dropdown-content li a {
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown>a::after {
+  content: " ▼";
+  font-size: 12px;
+}
+
+/* Team Page Styling */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.team-member {
+  background-color: rgb(241, 241, 255);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #302c35;
+  color: white;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.yes {}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+.footer-flex-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-button {
+  display: flex;
+  background: rgb(24, 19, 27);
+  color: white;
+  padding: 1rem;
+  border-radius: 16px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.doc-embed {
+  width: 80%;
+  max-width: 900px;
+  height: 700px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
