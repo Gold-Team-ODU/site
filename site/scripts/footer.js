@@ -1,4 +1,4 @@
-fetch("../footer.html")
+fetch("footer.html")
   .then(response => {
     if (response.ok) {
       let text = response.text();

@@ -1,4 +1,4 @@
-fetch("../nav.html")
+fetch("nav.html")
   .then(response => {
     if (response.ok) {
       let text = response.text();
