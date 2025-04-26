@@ -205,14 +205,8 @@ footer {
 }
 
 .footer-button {
-  display: flex;
   background: rgb(24, 19, 27);
-  color: white;
-  padding: 1rem;
   border-radius: 16px;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Container */
