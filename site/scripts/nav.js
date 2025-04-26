@@ -14,13 +14,6 @@ function getRoot() {
   }
 }
 
-function setLink(id) {
-  const element = document.getElementById(id);
-  if (element) {
-    element.href = getRoot() + id;
-  }
-}
-
 fetch(getRoot() + "nav.html")
   .then(response => {
     if (response.ok) {
@@ -33,15 +26,9 @@ fetch(getRoot() + "nav.html")
   .then(nav => {
     document.getElementById("nav").innerHTML = nav;
 
-    setLink("index");
-    setLink("customers");
-    setLink("presentations/societal_problem");
-    setLink("presentations/feasibility");
-    setLink("presentations/design");
-    setLink("lab1_outline");
-    setLink("references");
-    setLink("glossary");    
-    setLink("team");
+    for (element of document.getElementsByClassName("nav-link")) {
+      element.href = getRoot() + element.id;
+    }
   })
   .catch(error => {
     console.error("[ERROR]", error);
