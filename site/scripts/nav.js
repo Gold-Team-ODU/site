@@ -21,7 +21,7 @@ function setLink(id) {
   }
 }
 
-fetch("../nav.html")
+fetch(getRoot() + "nav.html")
   .then(response => {
     if (response.ok) {
       let text = response.text();

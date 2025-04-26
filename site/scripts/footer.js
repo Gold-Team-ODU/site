@@ -21,7 +21,7 @@ function setSrc(id) {
   }
 }
 
-fetch("../footer.html")
+fetch(getRoot() + "footer.html")
   .then(response => {
     if (response.ok) {
       return response.text();
