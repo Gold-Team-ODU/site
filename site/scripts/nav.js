@@ -39,8 +39,8 @@ fetch(getRoot() + "nav.html")
     setLink("presentations/feasibility");
     setLink("presentations/design");
     setLink("lab1_outline");
-    setLink("glossary");
     setLink("references");
+    setLink("glossary");    
     setLink("team");
   })
   .catch(error => {
