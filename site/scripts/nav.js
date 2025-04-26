@@ -40,6 +40,7 @@ fetch(getRoot() + "nav.html")
     setLink("presentations/design");
     setLink("lab1_outline");
     setLink("references");
+    setLink("glossary");    
     setLink("team");
   })
   .catch(error => {
