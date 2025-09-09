@@ -1,5 +1,3 @@
-# CS410-GOLD
-Repository for the class for gold group, Rogue-Like algebra program
+# CS411W - Gold Team
 
-URL
-https://bbake017.github.io/CS410-GOLD/
+Webpage for the Gold Team
